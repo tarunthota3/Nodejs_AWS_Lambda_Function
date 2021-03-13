@@ -4,7 +4,7 @@ exports.handler = async (event) => {
     console.log("keyword: ", event.keyword);
     const response = {
         statusCode: 200,
-        body: JSON.stringify(event.keyword + ' says hello'),
+        body: JSON.stringify(`Tarun Thota says ${event.keyword}`),
     };
     return response;
 };
